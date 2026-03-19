@@ -15,7 +15,7 @@ namespace studentAPI.Controllers
         {
             // Asigned object to the private readonly DateOnly varible , just for security resion.
             _context = context;
-          
+            // Asigned object to the private readonly DateOnly varible , just for security resion.
         }
 
         // GET: api/Student
