@@ -8,11 +8,14 @@ namespace studentAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class StudentController : ControllerBase
-    {
+    {   
+        //hello g
+        //This is the Read Only varible for dependency injection.
         private readonly StudentContext _context;
 
         public StudentController(StudentContext context)
         {
+            // Asigned object to the private readonly DateOnly varible , just for security resion.
             _context = context;
         }
 
