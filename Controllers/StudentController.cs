@@ -2,22 +2,20 @@
 using Microsoft.EntityFrameworkCore;
 using studentAPI.Data;
 using studentAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace studentAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class StudentController : ControllerBase
     {   
-        //hello g  
-        //This is the Read Only varible for dependency injection.
         private readonly StudentContext _context;
 
         public StudentController(StudentContext context)
         {
-            // Asigned object to the private readonly DateOnly varible , just for security resion.
             _context = context;
-            // Asigned object to the private readonly DateOnly varible , just for security resion.
         }
 
         // GET: api/Student
