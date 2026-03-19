@@ -9,7 +9,7 @@ namespace studentAPI.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {   
-        //hello g
+        //hello g  
         //This is the Read Only varible for dependency injection.
         private readonly StudentContext _context;
 
